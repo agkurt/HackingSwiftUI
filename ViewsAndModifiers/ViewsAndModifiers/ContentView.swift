@@ -10,13 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Color.blue
-            .frame(width: 300,height: 200)
-          
+        VStack {
+            LinearGradient(colors: [.red,.blue], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            Text("HELLO WORLD")
+        }
     }
-    
-    // you dont use nil with non optinal constant and variable
-    let answer:Int? = nil
 }
 
 #Preview {
